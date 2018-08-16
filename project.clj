@@ -36,7 +36,7 @@
                ;; This next build is a compressed minified build for
                ;; production. You can build this with:
                ;; lein cljsbuild once min
-               {:id "min"
+               {:id "production"
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/gab3alm.js"
                            :main gab3alm.core

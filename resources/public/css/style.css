@@ -1,2 +1,111 @@
-/* some style */
+/*REGULAR STYLES FOR DESKTOP VIEW*/
+#portfolio-wrapper{
+    height: 100vh;
+    padding: 0;
+}
 
+#left-container{
+    height: 100vh;
+    position:relative;
+}
+
+#left-container > .brand-image{
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 65%;
+}
+
+#left-container > .sideway-slab{
+    height: 100vh;
+    background-color: #F2C94C;
+    transform: skew(0deg, 0) translate(0%, 0);
+}
+
+/*SECTION CONTAINER RULES*/
+.section-container{
+    font-family: 'lato';
+    font-size: 1.5em;
+    margin: 0 5% 5% 5%;
+    padding: 3%;
+}
+
+.section-btn{
+    text-transform: capitalize;
+    color: white;
+    background-color: black;
+    border-radius: 0;
+    box-shadow: 4px 4px 0 #FFD400;
+    transition: all 0.1s ease-in;
+    float:right;
+    font-size:0.9em;
+}
+
+.section-btn:hover{
+    transition: all 0.3s ease-in;
+    box-shadow: 6px 6px 0 #FFD400;
+    color: white;
+}
+
+/*HEADING ELEMENT RULES*/
+h1.heading-1{
+    font-family: 'raleway';
+    font-size:1.8em;
+    color:white;
+    background-color:black;
+    display:inline-block;
+    padding: 10px;
+    text-transform: capitalize;
+    position:relative;
+    box-shadow: 4px 4px 0 #FFD400;
+}
+
+/*NAVIGATION BAR RULES*/
+nav{
+    margin: 3% 0;
+}
+
+ul > li.nav-item{
+    font-family: 'Lato';
+    font-size:1.3em;
+    text-transform:capitalize;
+    padding: 0 8% !important;
+}
+
+/*STYLES FOR MOBILE VIEW*/
+@media only screen and (max-width: 600px) {
+    #left-container{
+        height: 55vh;
+        transform: skew(0deg, 8deg) translate(0, -8%);
+        overflow:hidden;
+    }
+
+    #left-container > .brand-image{
+        width: 100%;
+        transform: skew(0deg, -8deg) translate(-50%, 0);
+    }
+
+    #left-container > .sideway-slab{
+        background-color: #F2C94C;
+    }
+
+    /*SECTION CONTAINER RULES*/
+    .section-container{
+        font-size: 1.1em;
+        padding: 3%;
+    }
+
+    .section-btn{
+        width:100%;
+        float:none;
+    }
+
+    /*HEADING ELEMENT RULES*/
+    h1.heading-1{
+        font-size:1.6em;
+        padding:2% 5%;
+        margin-left: 5%;
+    }
+
+}

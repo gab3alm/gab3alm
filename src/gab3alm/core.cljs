@@ -1,21 +1,18 @@
 (ns gab3alm.core
-    (:require [reagent.core :as reagent :refer [atom]]))
+    (:require [reagent.core :as reagent :refer [atom]]
+              [gab3alm.views.landing :refer [landing-page]]))
 
 (enable-console-print!)
 
-(*print-fn* "This text is printed from src/gab3alm/core.cljs. Go ahead and edit it and see reloading in action.")
-
-;; define your app data so that it doesn't get over-written on reload
-
 (defonce app-state (atom {:text "Hello world!"}))
 
+(defn main-view []
+  [:div {:id "portfolio-wrapper" :class "container-fluid"}
+   [:div {:class "row"}
+    [:div {:class "col"}
+     [landing-page]]]])
 
-(defn hello-world []
-  [:div
-   [:h1 (:text @app-state)]
-   [:h3 "Edit this and watch it change!"]])
-
-(reagent/render-component [hello-world]
+(reagent/render-component [main-view]
                           (. js/document (getElementById "app")))
 
 (defn on-js-reload []
