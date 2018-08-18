@@ -9,8 +9,14 @@
                  [org.clojure/core.async  "0.4.474"]
                  [reagent "0.7.0"]]
   :plugins [[lein-figwheel "0.5.16"]
+            [org.clojure/data.json "0.2.6"]
+            [lein-s3-static-deploy "0.1.0"]
             [lein-cljsbuild "1.1.7" :exclusions [[org.clojure/clojure]]]]
   :source-paths ["src"]
+  :aws {:access-key ~(System/getenv "AWS_ACCESS_KEY")
+        :secret-key ~(System/getenv "AWS_SECRET_KEY")
+        :s3-static-deploy {:bucket ~(System/getenv "AWS_PORTFOLIO_BUCKET")
+                           :local-root "resources/public"}}
   :cljsbuild {:builds
               [{:id "dev"
                 :source-paths ["src"]
