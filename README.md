@@ -1,39 +1,22 @@
 # gab3alm
 
-FIXME: Write a one-line description of your library/project.
+Source code for my portfolio website - `galmendarez.com`
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+The ultimate goal for this project is to highlight my knowledge and skills so that you can hire me with more confidence :)
+
+This clojurescript project is an experiment to see how well an S3 bucket can serve the frontend of a site.
+
+All that functional goodness is on my side. If you have never heard of `clojurescript` you can visit 
+
+`https://clojurescript.org/`
 
 ## Setup
 
-To get an interactive development environment run:
+This is a clojurescript project, so you will need to setup your JDK and leiningen in your machine.
 
-    lein figwheel
+If for some reason you want to get my portfolio up and running in your local machine, do
+- `lein figwheel dev`
 
-and open your browser at [localhost:3449](http://localhost:3449/).
-This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
-
-    (js/alert "Am I connected?")
-
-and you should see an alert in the browser window.
-
-To clean all compiled files:
-
-    lein clean
-
-To create a production build run:
-
-    lein do clean, cljsbuild once min
-
-And open your browser in `resources/public/index.html`. You will not
-get live reloading, nor a REPL. 
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+You should now be able to see my site in `localhost:3449`
