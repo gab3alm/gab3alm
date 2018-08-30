@@ -18,17 +18,17 @@
     (.setEnabled true)))
 
 (defn app-routes []
-  ;(secretary/set-config! :prefix "#")
+  (secretary/set-config! :prefix "#")
   (defroute "/" []
             (swap! app-state assoc :page :home))
-  (defroute "/about" []
-            (swap! app-state assoc :page :about))
+  (defroute "/resume" []
+            (swap! app-state assoc :page :resume))
   (hook-browser-navigation!))
 
 (defmulti current-page #(@app-state :page))
 (defmethod current-page :home []
   [main-view])
-(defmethod current-page :about []
-  [:div "Welcome to the about page."])
+(defmethod current-page :resume []
+  [:div "Welcome to the resume page."])
 (defmethod current-page :default []
   [:div "It seems that you are lost buddy."])
