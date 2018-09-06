@@ -68,7 +68,7 @@ h1.heading-1{
     font-size:1.8em;
     color:white;
     background-color:black;
-    display:inline-block;
+    display: table;
     padding: 10px;
     text-transform: capitalize;
     position:relative;
@@ -87,6 +87,68 @@ ul > li.nav-item > .nav-link{
     text-transform:uppercase;
     margin-right: 50px !important;
 }
+
+/*EXPERIENCE ENTRY RULES*/
+.entry-container{
+    margin-bottom: 3%;
+}
+
+.entry-container > p{
+    font-family: 'Lato';
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.company-name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 1.4em;
+}
+
+.date-range{
+    font-size: 1.3em;
+}
+
+ul.responsibilities{
+    font-family: 'Lato';
+    font-size: 1.2em;
+}
+
+ul.responsibilities > li::first-letter{
+    text-transform: capitalize;
+}
+
+
+/*SKILLS ENTRY RULES*/
+.skills-container{
+    font-family: "lato";
+    display: inline-block;
+    vertical-align: top;
+    text-transform: capitalize;
+    margin: 0 3% 5% 0;
+}
+
+.skills-container > .domain {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.skills-container > .skill-list {
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
 
 /*----------------------------------------------*/
 /*STYLES FOR MOBILE VIEW*/

@@ -4,7 +4,8 @@
             [goog.events :as events]
             [goog.history.EventType :as EventType]
             [reagent.core :as reagent :refer [atom]]
-            [gab3alm.views.template :refer [main-view]]))
+            [gab3alm.views.template :refer [main-view]]
+            [gab3alm.views.resume :refer [resume-view]]))
 
 (defonce app-state (atom {}))
 
@@ -29,6 +30,6 @@
 (defmethod current-page :home []
   [main-view])
 (defmethod current-page :resume []
-  [:div "Welcome to the resume page."])
+  [resume-view])
 (defmethod current-page :default []
   [:div "It seems that you are lost buddy."])
