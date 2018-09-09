@@ -1,6 +1,7 @@
 (ns gab3alm.components.sectional)
 
-(defn section [{:keys [text button link]}]
-  [:div {:key (str link "-section") :class "section-container"}
+(defn section [title {:keys [text button link]}]
+  [:div {:key (str title "-section") :class "section-container"}
    [:p {:class "section-info"} text]
-   [:a {:class "btn section-btn" :href link :role "button"} button]])
+   (when (and button link)
+     [:a {:class "btn section-btn" :href link :role "button"} button])])
