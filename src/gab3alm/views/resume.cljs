@@ -5,6 +5,7 @@
             [gab3alm.components.experience :refer [experience-marker skill-marker]]
             [gab3alm.components.sectional :refer [section]]))
 
+;;content of web page described in JSON objects. This way, the components can be generated in a loop.
 (def experience
   [{:company          "Pennymac"
     :title            "Jr. Application Developer"
@@ -81,6 +82,7 @@
       (skill-marker entry))
 
     (heading1 "Education")
-    (heading1 "Projects")
+    [:p {:class "school"} "california state university, northridge"]
+    [:p {:class "degree"} "B.S. computer engineering, 2017"]
 
     ]])
