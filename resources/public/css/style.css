@@ -201,4 +201,46 @@ ul.responsibilities > li::first-letter{
         display: none !important;
     }
 
+    /*EXPERIENCE ENTRY RULES*/
+    .entry-container{
+        padding: 5%;
+    }
+
+    .company-name{
+        font-size: 1.3em;
+    }
+
+    .title{
+        font-size: 1.2em;
+    }
+
+    .date-range{
+        font-size: 1.1em;
+    }
+
+    ul.responsibilities{
+        font-size: 1.1em;
+    }
+
+    /*SKILLS ENTRY RULES*/
+    .skills-container{
+        margin: 0 0 2% 5%;
+        display:block;
+    }
+
+    .skills-container > .domain {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .skills-container > .skill-list {
+        font-size: 1.1em;
+    }
+
+    /*EDUCATION RULES*/
+    .school, .degree{
+        margin: 0 5%;
+        font-size: 1.1em;
+    }
 }
