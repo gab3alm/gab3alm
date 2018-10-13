@@ -81,6 +81,11 @@
       (skill-marker (key entry) (val entry)))
 
     (heading1 "Education")
-    [:p {:class "school"} "california state university, northridge"]
-    [:p {:class "degree"} "B.S. computer engineering, 2017"]
+    [:div {:class "education-container"}
+      [:p {:class "school"} "california state university, northridge"]
+      [:p {:class "degree"} "B.S. computer engineering, 2017"]]
+
+    (heading1 "Contact Me")
+    [:p {:class "text"} "If you are interested in the skills that I can provide to your team, lets get in contact!"]
+    [:p {:class "email"} "Email: galmendarez4896@gmail.com"]
     ]])

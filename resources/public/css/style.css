@@ -142,11 +142,18 @@ ul.responsibilities > li::first-letter{
 
 
 /*EDUCATION RULES*/
-.school, .degree{
+.education-container{
+    margin-bottom: 3%;
+}
+
+.school, .degree, .email, .text{
     font-family: 'lato';
     font-size: 1.2em;
-    text-transform: capitalize;
     margin:0;
+}
+
+.school, .degree{
+    text-transform: capitalize;
 }
 
 /*----------------------------------------------*/
@@ -239,8 +246,14 @@ ul.responsibilities > li::first-letter{
     }
 
     /*EDUCATION RULES*/
+
+    .school, .degree, .email, .text{
+        font-family: 'lato';
+        font-size: 1.2em;
+        margin-left: 5%;
+    }
+
     .school, .degree{
-        margin: 0 5%;
-        font-size: 1.1em;
+        text-transform: capitalize;
     }
 }
