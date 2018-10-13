@@ -52,6 +52,9 @@
                :skills ["mongoDB"
                         "postgres"
                         "SQL"]}
+   :testing   {:domain "testing"
+               :skills ["Fitnesse"
+                        "New Relic"]}
    :svc       {:domain "version control"
                :skills ["git"
                         "github"
