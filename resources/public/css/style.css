@@ -37,15 +37,75 @@ body{
     padding-bottom: 1%;
 }
 
+/*PREVIEW PROJECTS RULES*/
+.preview-projects {
+    margin: 3% 0 5% 0;
+}
+
+.preview-projects .section-title{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*PROJECT PILL RULES*/
+.project-pill{
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 15px 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+    transition: all 0.1s ease-out;
+    margin-bottom: 15px;
+    display: block;
+    text-decoration:none;
+}
+
+a.project-pill:visited, a.project-pill:active{
+    text-decoration: none;
+    color:black;
+}
+
+.project-pill:hover{
+    transform: scale(1.01);
+    transition: all 0.2s ease-in;
+}
+
+.project-pill > .hanger{
+    display:inline-block;
+    background-color: #F2C94C;
+    border-radius: 50%;
+    height:12px;
+    width: 12px;
+    margin-right: 10px;
+}
+
+.project-pill > .title{
+    font-family: "lato";
+    font-size: 1.3em;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+
 /*SECTION CONTAINER RULES*/
+.intro-description{
+    font-size: 1.3em;
+}
+
 .section-container{
     font-family: 'lato';
     font-size: 1.5em;
     margin: 0 5% 0% 5%;
-    padding: 1% 3%;
+    padding: 1% 4%;
+    line-height: 1.8;
+}
+
+.section-info > .highlight {
+    color: #FFC000;
 }
 
 .section-btn{
+    font-family: 'lato';
     text-transform: capitalize;
     color: white;
     background-color: black;
