@@ -1,4 +1,4 @@
-(ns gab3alm.components.project-previews)
+(ns gab3alm.components.previews)
 
 (defn project-pill
   "creates project pill for the preview page"

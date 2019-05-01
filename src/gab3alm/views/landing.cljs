@@ -3,7 +3,7 @@
             [gab3alm.components.navbar :refer [navigation-bar]]
             [gab3alm.components.headings :refer [heading1]]
             [gab3alm.components.sectional :refer [section]]
-            [gab3alm.components.project-previews :refer [preview-widget]]))
+            [gab3alm.components.previews :refer [preview-widget]]))
 
 (def intro
   {:intro  {:text   [:h1 {:class "text-center section-info"} "Hello there! I'm " [:span {:class "highlight"} "Gabriel Almendarez"]]

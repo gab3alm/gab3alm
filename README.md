@@ -1,6 +1,6 @@
 # gab3alm
 
-Source code for my portfolio website - `galmendarez.com`
+Source code for my portfolio website - `gab3alm.com`
 
 ## Overview
 
