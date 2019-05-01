@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :min-lein-version "2.7.1"
-  :dependencies [[org.clojure/clojurescript "1.10.238"]
+  :dependencies [[org.clojure/clojurescript "1.10.520"]
                  [reagent "0.7.0"]
                  [secretary "1.2.3"]
                  [org.clojure/clojure "1.9.0"]
