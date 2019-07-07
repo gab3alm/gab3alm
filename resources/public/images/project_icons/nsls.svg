@@ -1,0 +1,9 @@
+<svg width="294" height="131" viewBox="0 0 294 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="146.5" cy="65.5" r="65.5" fill="#F2C94C"/>
+<circle cx="230.5" cy="79.5" r="27.5" fill="#F2C94C"/>
+<circle cx="262.5" cy="69.5" r="16.5" fill="#F2C94C"/>
+<circle r="12.5" transform="matrix(1 0 0 -1 281.5 53.5)" fill="#F2C94C"/>
+<circle r="27.5" transform="matrix(-1 0 0 1 63.5 79.5)" fill="#F2C94C"/>
+<circle r="16.5" transform="matrix(-1 0 0 1 31.5 69.5)" fill="#F2C94C"/>
+<circle cx="12.5" cy="53.5" r="12.5" transform="rotate(180 12.5 53.5)" fill="#F2C94C"/>
+</svg>

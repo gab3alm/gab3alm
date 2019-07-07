@@ -6,4 +6,4 @@
      [:p {:class (str "section-info" " " class)} text]
      text)
    (when (and button link)
-     [:a {:class "btn section-btn" :href link :role "button"} button])])
+     [:a {:class "btn section-btn section-btn-right" :href link :role "button"} button])])

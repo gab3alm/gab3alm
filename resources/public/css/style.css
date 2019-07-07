@@ -112,8 +112,11 @@ a.project-pill:visited, a.project-pill:active{
     border-radius: 0;
     box-shadow: 4px 4px 0 #FFD400;
     transition: all 0.1s ease-in;
-    float:right;
     font-size:0.9em;
+}
+
+.section-btn-right{
+    float:right;
 }
 
 .section-btn:hover{
@@ -215,6 +218,41 @@ ul.responsibilities > li::first-letter{
 .school, .degree{
     text-transform: capitalize;
 }
+
+/*Project card preview entry*/
+.projects-container{
+    overflow: scroll;
+    height: 100vh;
+}
+
+.card{
+    box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+    background-color: #FAFAFA;
+    margin-top: 10%;
+}
+
+.card-tags{
+    font-size: 0.9em;
+    font-weight: lighter;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card-img-top{
+    height: 150px;
+    padding: 5% 10%;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.project-btn{
+    width: 60%;
+}
+
+
 
 /*----------------------------------------------*/
 /*STYLES FOR MOBILE VIEW*/

@@ -3,9 +3,10 @@
   (:require [secretary.core :as secretary :refer-macros [defroute]]
             [goog.events :as events]
             [goog.history.EventType :as EventType]
-            [reagent.core :as reagent :refer [atom]]
+            [reagent.core :refer [atom]]
             [gab3alm.views.template :refer [main-view]]
-            [gab3alm.views.resume :refer [resume-view]]))
+            [gab3alm.views.resume :refer [resume-view]]
+            [gab3alm.views.projects :refer [projects-view]]))
 
 (defonce app-state (atom {}))
 
@@ -24,6 +25,8 @@
             (swap! app-state assoc :page :home))
   (defroute "/resume" []
             (swap! app-state assoc :page :resume))
+  (defroute "/projects" []
+            (swap! app-state assoc :page :projects))
   (hook-browser-navigation!))
 
 (defmulti current-page #(@app-state :page))
@@ -31,5 +34,7 @@
   [main-view])
 (defmethod current-page :resume []
   [resume-view])
+(defmethod current-page :projects []
+           [projects-view])
 (defmethod current-page :default []
   [:div "It seems that you are lost buddy."])

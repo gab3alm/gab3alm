@@ -16,4 +16,29 @@
      [:p {:class "section-title"} title]
      (for [project sample-projects]
        (project-pill project))
-     [:a {:class "btn section-btn" :href "/#/projects" :role "button"} "All Projects"]]]])
+     [:a {:class "btn section-btn section-btn-right" :href "/#/projects" :role "button"} "All Projects"]]]])
+
+(defn get-image-url
+      [image-name]
+      (str "/images/project_icons/" image-name))
+
+(defn get-tags
+  [tags]
+  (apply str (map #(str "#" % " ") tags)))
+
+(defn get-link
+  [link]
+  (str "https://figma-short.glitch.me/" link))
+
+(defn project-entry
+      "displays a preview for a project entry for"
+      [{:keys [title tags link img-name description]}]
+      [:div {:key title :class "col-sm-12 col-md-6 col-lg-4"}
+       [:div {:class "card project-entry"}
+        [:img {:class "card-img-top" :src (get-image-url img-name)}]
+        [:div {:class "card-body"}
+         [:h5 {:class "card-title"} title]
+         [:p {:class "card-tags"} (get-tags tags)]
+         [:p {:class "card-text"} description]
+         [:div {:class "text-center"}
+          [:a {:class "btn section-btn project-btn" :target "_blank" :href (get-link link) :role "button"} "View"]]]]])
