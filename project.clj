@@ -6,7 +6,7 @@
   :min-lein-version "2.7.1"
   :dependencies [[org.clojure/clojurescript "1.10.520"]
                  [reagent "0.7.0"]
-                 [secretary "1.2.3"]
+                 [clj-commons/secretary "1.2.4"]
                  [org.clojure/clojure "1.9.0"]
                  [org.clojure/core.async  "0.4.474"]]
   :plugins [[lein-figwheel "0.5.16"]

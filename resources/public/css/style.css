@@ -252,6 +252,29 @@ ul.responsibilities > li::first-letter{
     width: 60%;
 }
 
+/*Article View*/
+.article-container{
+    height: 100vh;
+    overflow: scroll;
+}
+
+.article{
+    padding: 0 5%;
+}
+
+.article-body{
+    padding: 5% 0;
+    width: 100%;
+}
+
+.article-body > img{
+    width: 100%;
+}
+
+.article-body > img.sm-img{
+    width: 50%;
+    margin: 2% 25%;
+}
 
 
 /*----------------------------------------------*/

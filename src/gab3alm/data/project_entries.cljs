@@ -4,7 +4,7 @@
 (def project-entries
   [{:title       "Greenify Backend & Database"
     :tags        ["postgres" "javascript" "backend"]
-    :link        ""
+    :link        "/#/article/greenify"
     :img-name    "greenify.svg"
     :description "Greenify is a small budget making tool that helps tracks your existing accounts and payments.
                                      The Greenify project allows users to use basic income information and their pending accounts in order to

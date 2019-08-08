@@ -6,6 +6,7 @@
             [reagent.core :refer [atom]]
             [gab3alm.views.template :refer [main-view]]
             [gab3alm.views.resume :refer [resume-view]]
+            [gab3alm.views.article :refer [article-view]]
             [gab3alm.views.projects :refer [projects-view]]))
 
 (defonce app-state (atom {}))
@@ -27,6 +28,8 @@
             (swap! app-state assoc :page :resume))
   (defroute "/projects" []
             (swap! app-state assoc :page :projects))
+  (defroute "/article/:title" {:as params}
+            (swap! app-state assoc :page :article :params params))
   (hook-browser-navigation!))
 
 (defmulti current-page #(@app-state :page))
@@ -35,6 +38,9 @@
 (defmethod current-page :resume []
   [resume-view])
 (defmethod current-page :projects []
-           [projects-view])
+  [projects-view])
+(defmethod current-page :article []
+  (let [{:keys [title]} (@app-state :params)]
+    (article-view title)))
 (defmethod current-page :default []
   [:div "It seems that you are lost buddy."])

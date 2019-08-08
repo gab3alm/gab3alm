@@ -26,7 +26,7 @@
   [tags]
   (apply str (map #(str "#" % " ") tags)))
 
-(defn get-link
+(defn get-figma-link
   [link]
   (str "https://figma-short.glitch.me/" link))
 
@@ -41,4 +41,4 @@
          [:p {:class "card-tags"} (get-tags tags)]
          [:p {:class "card-text"} description]
          [:div {:class "text-center"}
-          [:a {:class "btn section-btn project-btn" :target "_blank" :href (get-link link) :role "button"} "View"]]]]])
+          [:a {:class "btn section-btn project-btn" :target "_blank" :href link :role "button"} "View"]]]]])
