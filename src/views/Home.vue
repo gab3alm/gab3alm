@@ -3,6 +3,6 @@
 
 <template>
   <main>
-    This is your homepage.
+    Welcome to my portfolio! I'm working on it man.
   </main>
 </template>
